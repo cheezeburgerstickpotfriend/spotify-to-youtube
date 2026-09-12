@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Notice — Spotify to YouTube</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 32px 20px 64px; max-width: 680px;
+    font: 16px/1.6 "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 32px 0 8px; }
+  .updated { opacity: .7; font-size: 14px; margin-bottom: 24px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { font-size: 14px; padding: 1px 5px; border-radius: 4px; background: rgba(128,128,128,.18); }
+  .box { border-left: 3px solid #1db954; padding: 2px 0 2px 14px; margin: 20px 0; }
+</style>
+</head>
+<body>
+  <h1>Privacy Notice</h1>
+  <div class="updated">Spotify to YouTube &middot; last updated 12 September 2026</div>
+
+  <p>
+    <strong>Spotify to YouTube</strong> is a tool you run on your own computer. It reads
+    one of your Spotify playlists, finds each song on YouTube, and builds the matching
+    playlist on your YouTube channel.
+  </p>
+
+  <div class="box">
+    There is no server, no account to create, and nobody else involved. Everything the
+    tool reads or writes stays on the computer you run it on. Nothing is collected by
+    the author, and there is nothing to sell, share, or analyse.
+  </div>
+
+  <h2>What it connects to</h2>
+  <p>
+    You sign in to two services yourself, in your own browser. Each asks your permission
+    before granting anything, and shows you exactly what is being requested.
+  </p>
+  <ul>
+    <li>
+      <strong>Spotify</strong>, to read your playlists. The permissions requested are
+      <code>playlist-read-private</code> and <code>playlist-read-collaborative</code>.
+      It cannot change anything on your Spotify account.
+    </li>
+    <li>
+      <strong>YouTube</strong>, to create playlists and add videos to them. The
+      permission requested is <code>https://www.googleapis.com/auth/youtube</code>.
+    </li>
+  </ul>
+
+  <h2>Its use of YouTube API Services</h2>
+  <p>
+    This tool uses <strong>YouTube API Services</strong>. By using it you are agreeing to
+    the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noreferrer">YouTube
+    Terms of Service</a>, and Google's handling of your data is described in the
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google
+    Privacy Policy</a>.
+  </p>
+  <p>
+    You can review or withdraw this tool's access to your Google account at any time at
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">
+    myaccount.google.com/permissions</a>. Spotify's equivalent is under
+    <em>Account &rarr; Apps</em> at
+    <a href="https://www.spotify.com/account/apps/" target="_blank" rel="noreferrer">
+    spotify.com/account/apps</a>. Withdrawing access stops the tool working; it does not
+    delete any playlist it has already made.
+  </p>
+
+  <h2>What is stored, and where</h2>
+  <p>
+    All of it lives in a <code>data</code> folder next to the program, on your own
+    machine.
+  </p>
+  <ul>
+    <li>
+      <strong>Sign-in tokens</strong> for Spotify and YouTube, so you do not have to sign
+      in every time. These are as sensitive as passwords. They are kept until you delete
+      them or withdraw access.
+    </li>
+    <li>
+      <strong>The playlists you have converted</strong> &mdash; song titles, artists, and
+      which YouTube video each one was matched to &mdash; so an interrupted conversion can
+      pick up where it stopped.
+    </li>
+    <li>
+      <strong>A record of which video each song matched</strong>, kept indefinitely. This
+      is what stops the tool spending its limited daily YouTube search allowance looking
+      up the same song twice.
+    </li>
+    <li>
+      <strong>A count of YouTube requests made today</strong>, so it can stop before
+      hitting the daily limit.
+    </li>
+  </ul>
+  <p>
+    To erase all of it, delete the <code>data</code> folder. There is no other copy.
+  </p>
+
+  <h2>What is sent where</h2>
+  <ul>
+    <li>
+      <strong>To Spotify</strong>: a request for the playlist you asked for. See
+      <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank" rel="noreferrer">Spotify's
+      Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>To YouTube</strong>: the song title and artist, as a search; and the videos
+      chosen, to add to your playlist.
+    </li>
+  </ul>
+  <p>
+    Nowhere else. No analytics, no tracking, no cookies, no third-party services of any
+    kind.
+  </p>
+
+  <h2>If you run this yourself</h2>
+  <p>
+    The tool is run by each person on their own machine, with their own Spotify and
+    Google credentials. That means whoever runs a copy holds the only data it has, and
+    the author of the tool never sees any of it &mdash; including this author.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this notice can go to <strong>cheezeburgerstick</strong> on Twitch, or at <strong>cheezeburgersticktv@gmail.com</strong>.
+  </p>
+</body>
+</html>
