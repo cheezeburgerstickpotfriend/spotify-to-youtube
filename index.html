@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotify to YouTube</title>
+<meta name="description" content="A personal tool that turns a Spotify playlist into a YouTube playlist.">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 32px 20px 64px; max-width: 680px;
+    font: 16px/1.6 "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  h2 { font-size: 17px; margin: 32px 0 8px; }
+  .tagline { opacity: .75; margin: 0 0 28px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { font-size: 14px; padding: 1px 5px; border-radius: 4px; background: rgba(128,128,128,.18); }
+  .box { border-left: 3px solid #1db954; padding: 2px 0 2px 14px; margin: 24px 0; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid rgba(128,128,128,.3); font-size: 14px; opacity: .8; }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+  <h1>Spotify to YouTube</h1>
+  <p class="tagline">Turns a Spotify playlist into a YouTube playlist, one matched track at a time.</p>
+
+  <p>
+    This is a personal tool. You run it on your own computer, point it at one of your own
+    Spotify playlists, and it builds the matching playlist on your own YouTube channel.
+    There is no hosted service and no account to sign up for &mdash; this page exists to
+    describe what the tool does and where its privacy notice lives.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads the tracks in a Spotify playlist you own.</li>
+    <li>Searches YouTube for each one and scores the results on title, artist and length,
+      so covers, live versions and hour-long loops do not quietly end up in the playlist.</li>
+    <li>Adds the confident matches, and asks you about anything it is unsure of.</li>
+    <li>Creates a new YouTube playlist, or adds to one you already have &mdash; skipping
+      songs already in it.</li>
+  </ul>
+
+  <h2>What it can see</h2>
+  <p>
+    You sign in to Spotify and to YouTube yourself, and each one asks your permission
+    first. Spotify access is <strong>read only</strong>: the tool can read your playlists
+    and cannot change anything. YouTube access is used to create playlists and add videos
+    to them, on your own channel.
+  </p>
+
+  <div class="box">
+    Everything it reads or writes stays on the computer you run it on. Nothing is
+    collected, sent elsewhere, or shared with anyone. The full details are in the
+    <a href="privacy.html">privacy notice</a>.
+  </div>
+
+  <h2>Daily limits</h2>
+  <p>
+    YouTube rations API use, and a single search is expensive. The tool budgets against
+    that allowance, stops cleanly when it runs out, and carries on the next day &mdash;
+    and it remembers every match permanently, so no song is ever searched for twice.
+  </p>
+
+  <h2>Its use of YouTube API Services</h2>
+  <p>
+    This tool uses YouTube API Services. Using it means agreeing to the
+    <a href="https://www.youtube.com/t/terms" target="_blank" rel="noreferrer">YouTube Terms of Service</a>.
+    Google's handling of your data is covered by the
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a>,
+    and you can withdraw the tool's access at any time at
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">myaccount.google.com/permissions</a>.
+  </p>
+
+  <footer>
+    <a href="privacy.html">Privacy notice</a>
+    <a href="https://www.twitch.tv/cheezeburgerstick" target="_blank" rel="noreferrer">cheezeburgerstick on Twitch</a>
+  </footer>
+</body>
+</html>
